@@ -1,10 +1,11 @@
-$color: green;
-$color2: white;
+@import 'normalize.scss';
 
-body {
-    background-color: $color;
+// === Mixins ===
+@mixin font-Lato {
+    font-family: 'Lato', sans-serif;
 }
 
-h1 {
-    color: $color2;
+@mixin font-Montserrat {
+    font-family: 'Montserrat', sans-serif;
 }
+// === / Mixins ===
