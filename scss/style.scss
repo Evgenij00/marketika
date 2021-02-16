@@ -20,12 +20,30 @@ $color-white: white;
 }
 body {
     @include font-Lato();
+
+    color: #414141;
 }
 
 .section-outer {}
 .section-inner {
     width: 1118px;
     margin: 0 auto;
+}
+
+.description-item {
+    &__icon {
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 14px;
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 28px;
+        color: #6C6C6C;
+    }
 }
 // === / Common ===
 
@@ -130,6 +148,52 @@ body {
 // === / Header ===
 
 // === Promo ===
+.section-promo {
+    padding-top: 117px;
+    padding-bottom: 132px;
+}
+
+.section-promo-1 {
+    display: flex;
+    border-bottom: 1px solid #E2E2E2;
+    padding-bottom: 113px;
+
+    &__content,
+    &__video {
+        flex-basis: 50%;
+    }
+
+    &__content {
+        padding-right: 95px;
+
+        .title {
+            font-weight: bold;
+            font-size: 32px;
+            line-height: 51px;
+            margin-bottom: 56px;
+        }
+        .description-item {
+            margin-bottom: 30px;
+        }
+    }
+    &__video {
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.section-promo-2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 86px;
+    text-align: center;
+
+    .description-item + .description-item {
+        padding-left: 31px;
+    }
+}
 // === / Promo ===
 
 // === Founder ===
